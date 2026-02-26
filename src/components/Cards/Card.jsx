@@ -1,5 +1,5 @@
 const Card = ({ movie }) => {
-  const { title, image, description, release_date } = movie;
+  const { title, image, description} = movie;
 
   return (
     <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
@@ -15,10 +15,7 @@ const Card = ({ movie }) => {
         <p className="text-sm text-gray-600 line-clamp-3 mb-3">
           {description}
         </p>
-
-        <span className="text-xs font-medium text-emerald-600">
-          {release_date}
-        </span>
+ 
       </div>
     </div>
   );

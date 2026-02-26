@@ -11,7 +11,7 @@ const Nav = () => {
 
       <div className="flex items-center gap-3 justify-center">
         <LuCircleUserRound className="text-4xl hover:text-white transition duration-300 ease-in-out" />
-        <button className="border-2 border-white text-white rounded-full font-semibold hover:bg-white hover:text-black transition duration-300 px-4 py-1">
+        <button className="border-2 border-white text-white rounded-full font-semibold hover:bg-white hover:text-black transition duration-300 px-4 py-1 hidden md:block">
           sign in
         </button>
 
