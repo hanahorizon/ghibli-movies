@@ -34,3 +34,31 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+
+<section className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6 pb-16">
+        {movies.map(movie => (
+          <div
+            key={movie.id}
+            className="bg-neutral-900 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition duration-300"
+          >
+            <img
+              src={movie.image}
+              alt={movie.title}
+              className="h-72 w-full object-cover"
+            />
+            <div className="p-4">
+              <h2 className="text-lg font-semibold mb-2">
+                {movie.title}
+              </h2>
+              <p className="text-sm text-neutral-400 line-clamp-3">
+                {movie.description}
+              </p>
+              <p className="text-xs mt-3 text-neutral-500">
+                {movie.release_date} • {movie.director}
+              </p>
+            </div>
+          </div>
+        ))}
+      </section>
