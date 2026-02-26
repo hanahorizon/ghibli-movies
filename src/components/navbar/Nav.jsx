@@ -3,7 +3,7 @@ import { LuCircleUserRound } from "react-icons/lu";
 
 const Nav = () => {
   return (
-    <nav className="max-w-7xl mx-auto sticky top-0 w-full bg-linear-to-r from-indigo-700 from-20% via-sky-600 via-40% to-emerald-600 to-90% flex justify-between items-center p-4 z-50">
+    <nav className="max-w-7xl mx-auto sticky top-0 w-full bg-linear-to-r from-indigo-600 from-20% via-sky-600 via-40% to-emerald-900 to-90% flex justify-between items-center p-4 z-50">
       
       <div className="text-xl font-bold px-2 cursor-pointer">
         GhibliMovies

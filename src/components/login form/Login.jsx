@@ -2,35 +2,61 @@ import React from 'react'
 
 const LoginForm = () => {
   return (
-    <section className="max-w-7xl mx-auto relative h-[90vh] w-full flex items-center justify-center text-white">
+    <section className="relative min-h-screen w-full flex items-center justify-center text-white overflow-hidden">
 
+      {/* Background Image */}
       <img
         src="/bkg2.jpeg"
-        alt=""
+        alt="background"
         className="absolute inset-0 w-full h-full object-cover"
       />
 
-      <div className="absolute inset-0 bg-black/70 flex" >  
-      <div className="flex flex-col items-center justify-center text-left p-15"> 
-        <h3 className="text-lg md:text-5xl font-bold mb-4 ">Explore the world of ghibli studio</h3>
-        <p className="md:text-lg opacity-90 mb-6 ">Don't wanna lose your progress? sign up now or log in to to continue watching.</p>
-      </div>
-      <div className="flex flex-col items-center justify-center text-center px-4 text-white">
-        <form action="">
-          <input type="email" placeholder="Email" className="mb-4 px-4 py-2 rounded-lg border border-white w-100 focus:outline-none focus:ring focus:ring-white" />
-          <input type="password" placeholder="Password" className="mb-4 px-4 py-2 rounded-lg border border-white w-100 focus:outline-none focus:ring focus:ring-white" />
-          <input type="password" placeholder="Confirm Password" className="mb-4 px-4 py-2 rounded-lg border border-white w-100 focus:outline-none focus:ring focus:ring-white" />
-          
-        </form>
-        <div className="flex gap-4 mt-4">
-        <button className="bg-white text-black px-6 py-2 rounded-full font-semibold hover:bg-gray-200 transition duration-300">
-          Log In
-        </button>
-        <button className="bg-white text-black px-6 py-2 rounded-full font-semibold hover:bg-gray-200 transition duration-300">
-          Sign up
-        </button>
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/70"></div>
+
+      {/* Content Container */}
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 py-12 flex flex-col lg:flex-row items-center justify-between gap-12">
+
+        {/* Left Text Section */}
+        <div className="w-full lg:w-1/2 text-center lg:text-left">
+          <h3 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+            Explore the world of ghibli studio
+          </h3>
+          <p className="text-base md:text-lg opacity-90 max-w-md mx-auto lg:mx-0">
+            Don’t wanna lose your progress? Sign up now or log in to continue watching.
+          </p>
         </div>
+
+        {/* Form Section */}
+        <div className="w-full lg:w-1/2 max-w-md">
+          <form className="flex flex-col gap-4">
+            <input
+              type="email"
+              placeholder="Email"
+              className="w-full px-4 py-3 rounded-lg bg-transparent border border-white focus:outline-none focus:ring-2 focus:ring-white"
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              className="w-full px-4 py-3 rounded-lg bg-transparent border border-white focus:outline-none focus:ring-2 focus:ring-white"
+            />
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              className="w-full px-4 py-3 rounded-lg bg-transparent border border-white focus:outline-none focus:ring-2 focus:ring-white"
+            />
+
+            <div className="flex flex-col sm:flex-row gap-4 mt-4">
+              <button className="w-full bg-white text-black py-2 rounded-full font-semibold hover:bg-gray-200 transition">
+                Log In
+              </button>
+              <button className="w-full bg-white text-black py-2 rounded-full font-semibold hover:bg-gray-200 transition">
+                Sign Up
+              </button>
+            </div>
+          </form>
         </div>
+
       </div>
     </section>
   )
