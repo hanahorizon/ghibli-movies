@@ -1,20 +1,22 @@
 
-import React from 'react'
-import Home from '@/pages/Home'
+import Nav from '@/components/navbar/Nav'
+import Banner from '@/components/banner/Banner'
+import CardGrid from '@/app/CardGrid'
+import LoginForm from '@/components/login form/Login'
+import Footer from '@/components/footer/Footer'
 
 
+const page = ()=> {
+    return (
 
+        <>
 
-function page() {
+            <Banner />
+            <CardGrid/>
+            <LoginForm />
 
-  return (
-
-    <>
-    
-    <Home/>
-    
-    </>
-  )
+        </>
+    )
 }
 
 export default page;
